@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InheritanceDemo26
 {
-    public class Employee
+    public abstract class Employee
     {
 		private string _name;
 
@@ -22,9 +22,11 @@ namespace InheritanceDemo26
             Address = address; 
         }
 
-        public virtual int CalculateSalary()
-        {
-            return 32000; 
-        }
+        //public virtual int CalculateSalary()
+        //{
+        //    return 32000; 
+        //}
+        public abstract int CalculateSalary();
+
     }
 }

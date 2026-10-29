@@ -14,7 +14,8 @@ namespace InheritanceDemo26
         }
         public override int CalculateSalary()
         {
-            return base.CalculateSalary() * 2;
+            //return base.CalculateSalary() * 2;
+            return 32000 * 2;
         }
     }
 

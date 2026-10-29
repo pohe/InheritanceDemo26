@@ -5,7 +5,11 @@ Console.WriteLine("Hello, World!");
 
 Teacher t1 = new Teacher("Peter", "Vej 123", "Programming");
 Secretary s1 = new Secretary("Ole", "Gade 123", 1000);
+IntTeacher it1 = new IntTeacher("english", "Annne", "Vej 123", "Danish");
+Employee it2 = new IntTeacher("spanish", "Petra", "Vej 123", "spanish");
 
+
+//Employee ea1 = new Employee("Ole", "Vej 34"); ikke muligt når klassen er abstract
 
 
 Console.WriteLine($"Salary teacher Programming {t1.CalculateSalary() }");
@@ -20,6 +24,8 @@ List<Employee> allEmployees = new List<Employee>();
 allEmployees.Add(t1);
 allEmployees.Add(s1);
 allEmployees.Add(e1);
+allEmployees.Add(it1);
+allEmployees.Add(it2);
 
 foreach(Employee e in allEmployees)
 {

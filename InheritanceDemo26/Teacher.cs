@@ -20,7 +20,8 @@ namespace InheritanceDemo26
                 return 35000;
             }
             else
-                return base.CalculateSalary();
+                //return base.CalculateSalary();
+                return 32000; 
         }
 
     }
